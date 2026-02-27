@@ -2,6 +2,9 @@
 
 Este repositório contém o backend do **HUB Secagem Digital**, uma plataforma centralizada para monitoramento de infraestrutura de servidores e gerenciamento de projetos. Desenvolvido com Django e Django REST Framework, o sistema permite o controle remoto de serviços e o acompanhamento detalhado de estatísticas de servidor via SSH.
 
+<img width="1920" height="1080" alt="Captura de Tela (96)" src="https://github.com/user-attachments/assets/6bccdd09-3ec2-4e93-90ae-f4cd4cc6c5fb" />
+
+
 ## 📋 Funcionalidades Principais
 
 ### 🖥️ Gestão de Infraestrutura (via SSH)
@@ -34,68 +37,6 @@ Este repositório contém o backend do **HUB Secagem Digital**, uma plataforma c
 
 ---
 
-## 🚀 Como Executar o Projeto
-
-### Pré-requisitos
-- Python 3.10+
-- Pip (Gerenciador de pacotes)
-- Virtualenv (Recomendado)
-
-### Passo a Passo
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/projeto-hub-secagem-digital.git
-   cd projeto-hub-secagem-digital
-   ```
-
-2. **Crie e ative o ambiente virtual:**
-   ```bash
-   python -m venv venv
-   # No Windows:
-   .\venv\Scripts\activate
-   # No Linux/Mac:
-   source venv/bin/activate
-   ```
-
-3. **Instale as dependências:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   *(Nota: Caso não tenha o arquivo requirements.txt, instale: `django djangorestframework django-cors-headers paramiko python-dotenv requests`)*
-
-4. **Configure as variáveis de ambiente:**
-   Crie um arquivo `.env` na raiz do projeto com as seguintes chaves:
-   ```env
-   SSH_HOST=seu_ip_ou_host
-   SSH_USERNAME=seu_usuario
-   SSH_PASSWORD=sua_senha
-   SSH_PORT=22
-   ```
-
-5. **Execute as migrações do banco de dados:**
-   ```bash
-   python manage.py migrate
-   ```
-
-6. **Inicie o servidor de desenvolvimento:**
-   ```bash
-   python manage.py runserver
-   ```
-
----
-
-## 🛣️ Endpoints Principais (API)
-
-| Método | Endpoint | Descrição | Permissão |
-| :--- | :--- | :--- | :--- |
-| `GET` | `/api/infra/status/` | Estatísticas de CPU/RAM/Disco | Equipe |
-| `GET` | `/api/infra/processes/` | Top processos do servidor | Equipe |
-| `GET` | `/api/infra/domains/` | Lista sites e status HTTP | Equipe |
-| `POST` | `/api/infra/manage/` | Iniciar/Reiniciar serviços | Admin |
-| `GET` | `/api/projects/` | Lista todos os projetos | Equipe |
-
----
 
 ## 📄 Licença
 
