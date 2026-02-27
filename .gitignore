@@ -1,0 +1,44 @@
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+venv/
+.venv/
+env/
+.env/
+htmlcov/
+.tox/
+.nosetests/
+.pytest_cache/
+.hypothesis/
+
+# Django
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compressed files
+*.rar
+*.zip
+*.7z
